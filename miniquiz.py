@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import ttk
 
-#fenetre = la grande boite qui contient tout et frm = la ptit boite qui contient les label, button, etc...
 fenetre = Tk()
 fenetre.title("Mini quiz")
 fenetre.resizable(False, False)
@@ -43,10 +42,10 @@ q = [
 
 pts = 0
 numero_de_la_question = 0
-#variable =  a une memoire pour stocker  , command = declanche l'action
 blocreponse = 1
 reponsecoche = []
 case = []
+
 for n in q[0]["choix"]:
     Variabletemporaire = IntVar()
     leschoix = Checkbutton(frm, text=n, variable=Variabletemporaire)
